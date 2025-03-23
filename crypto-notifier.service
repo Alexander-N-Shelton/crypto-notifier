@@ -1,0 +1,6 @@
+[Unit]
+Description=Displays Crypto Prices as Notifications
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python /home/alex/.myServices/crypto-notifier/check_crypto_prices.py

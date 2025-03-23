@@ -1,0 +1,10 @@
+[Unit]
+Description=Runs crypto-notifier every 15 minutes
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=15min
+Unit=crypto-notifier.service
+
+[Install]
+WantedBy=timers.target
